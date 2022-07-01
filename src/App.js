@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <>
       {articles.map((article, index) => {
         const { title, description, content, image, publishedAt, url } =
           article;
@@ -32,23 +32,28 @@ function App() {
         const datePublished = str.replace("Z", " ");
         return (
           <div className="grid-container" key={index}>
-            <div className="grid-card">
-              <h2>{title}</h2>
-              <p>{description}</p>
-              <img src={image} alt="" />
-              <p>
-                {article?.content?.substring(0, article?.content?.length - 15)}
-                ...{" "}
-              </p>
-              <h4>Published at {datePublished} </h4>
-              <a href={url} target="_blank">
-                Read more
-              </a>
+            <div className="articles-container">
+              <div className="grid-card">
+                <h2>{title}</h2>
+                <p>{description}</p>
+                <img src={image} alt="" />
+                <p>
+                  {article?.content?.substring(
+                    0,
+                    article?.content?.length - 15
+                  )}
+                  ...{" "}
+                </p>
+                <h4>Published at {datePublished} </h4>
+                <a href={url} target="_blank">
+                  Read more
+                </a>
+              </div>
             </div>
           </div>
         );
       })}
-    </div>
+    </>
   );
 }
 
