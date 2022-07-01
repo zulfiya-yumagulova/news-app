@@ -36,7 +36,10 @@ function App() {
               <h2>{title}</h2>
               <p>{description}</p>
               <img src={image} alt="" />
-              <p>{content}</p>
+              <p>
+                {article?.content?.substring(0, article?.content?.length - 15)}
+                ...{" "}
+              </p>
               <h4>{datePublished} </h4>
               <a href={url} target="_blank">
                 Read more
