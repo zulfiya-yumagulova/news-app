@@ -37,7 +37,7 @@ function App() {
         const str = publishedAt.replace("T", " ");
         const datePublished = str.replace("Z", " ");
         return (
-          <div className="grid-container" key={index}>
+          <div className="grid-container content" key={index}>
             <div className="articles-container">
               <div className="grid-card">
                 <h2>{title}</h2>
@@ -59,6 +59,9 @@ function App() {
           </div>
         );
       })}
+      <Navbar />
+      <Sidebar />
+      <Footer />
     </>
   );
 }
