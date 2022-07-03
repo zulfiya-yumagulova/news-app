@@ -1,4 +1,8 @@
 import { useState, useEffect } from "react";
+import Header from "./Components/Header.js";
+import Sidebar from "./Components/Sidebar.js";
+import Navbar from "./Components/Navbar.js";
+import Footer from "./Components/Footer.js";
 import "./App.css";
 
 function App() {
@@ -25,6 +29,8 @@ function App() {
 
   return (
     <>
+      <Header />
+
       {articles.map((article, index) => {
         const { title, description, content, image, publishedAt, url } =
           article;
