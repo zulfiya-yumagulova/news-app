@@ -1,0 +1,16 @@
+input {
+  width: 400px;
+  height: 40px;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  color: #333;
+}
+
+.btn-search {
+  margin: 20px;
+  background-color: #34b3f1;
+  border-radius: 10px;
+  color: #fff;
+  padding: 5px;
+}
