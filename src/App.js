@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-
-import "./App.css";
 import Search from "./Components/Search.js";
+import "./App.css";
 
 function App() {
   const [articles, setArticles] = useState([]);
@@ -32,9 +31,10 @@ function App() {
         <div className="overlay">
           <h1 className="text-center mb-4 lg:text-6xl">
             {/* Capitalizing category */}
-            {category.charAt(0).toLocaleUpperCase() + category.slice(1)} News
+            News About
+            {category.charAt(0).toLocaleUpperCase() + category.slice(1)}
           </h1>
-          <Search seacrhText={(text) => setCategory(text)} />
+          <Search searchText={(text) => setCategory(text)} />
         </div>
       </div>
       {isLoading ? (

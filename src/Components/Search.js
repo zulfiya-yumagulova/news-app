@@ -7,6 +7,7 @@ export default function Search({ searchText }) {
     e.preventDefault();
     searchText(text);
   };
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
