@@ -8,6 +8,7 @@ body {
   background: url("https://images.unsplash.com/photo-1627719172038-611c725920bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzJ8fGxhcHRvcCUyMG5ld3N8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60")
     no-repeat center/cover;
   height: 400px;
+  margin-bottom: 2rem;
 }
 
 .showcase .overlay {

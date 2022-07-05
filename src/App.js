@@ -27,11 +27,11 @@ function App() {
 
   return (
     <>
-      <div className="showcase">
+      <div className="showcase" data-testid="cards-testing">
         <div className="overlay">
           <h1 className="text-center mb-4 lg:text-6xl">
             {/* Capitalizing category */}
-            News About
+            <span>News About </span>
             {category.charAt(0).toLocaleUpperCase() + category.slice(1)}
           </h1>
           <Search searchText={(text) => setCategory(text)} />

@@ -9,7 +9,7 @@ export default function Search({ searchText }) {
   };
 
   return (
-    <div>
+    <div data-testid="search" className="search-section">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
