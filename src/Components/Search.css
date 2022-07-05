@@ -14,3 +14,10 @@ input {
   color: #fff;
   padding: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 200px;
+    margin-left: 15px;
+  }
+}

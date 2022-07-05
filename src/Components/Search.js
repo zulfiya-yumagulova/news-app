@@ -12,6 +12,7 @@ export default function Search({ searchText }) {
     <div data-testid="search" className="search-section">
       <form onSubmit={handleSubmit}>
         <input
+          className="search-bar"
           type="text"
           placeholder="e.g. sport"
           onChange={(e) => setText(e.target.value)}

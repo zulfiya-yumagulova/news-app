@@ -23,3 +23,9 @@ body {
   color: #fff;
   letter-spacing: 1.6px;
 }
+
+/* @media screen and (max-width: 400px) {
+  input .search-bar {
+    width: 100%;
+  }
+} */
